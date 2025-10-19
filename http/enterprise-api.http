@@ -1,0 +1,27 @@
+### GET all enterprise
+GET http://localhost:7787/api/entreprise
+Content-Type: application/json
+
+### POST create new enterprise
+POST http://localhost:7787/api/entreprise
+Content-Type: application/json
+
+{
+  "name": "ecosenses",
+  "logo": "https://example.com/logo.png",
+  "description": "Entreprise de services d'assainissement & BTP",
+  "address": "Conakry, Guinea",
+  "subdomain": "lvgsmart"
+}
+
+### PUT update enterprise by id
+PUT http://localhost:7787/api/entreprise/1
+Content-Type: application/json
+
+{
+  "name": "ecosenses",
+  "logo": "https://example.com/logo.png",
+  "description": "Entreprise de services WASH",
+  "address": "Lambanyi, Conakry, Guinea",
+  "subdomain": "ecosenses"
+}

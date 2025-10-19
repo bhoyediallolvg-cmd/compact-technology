@@ -1,0 +1,45 @@
+### GET all services
+GET http://localhost:9887/api/services
+
+### GET service by ID
+GET http://localhost:9887/api/services/1
+
+### GET service by reference
+GET http://localhost:9887/api/services/reference/SRV001
+
+### GET services by enterprise ID
+GET http://localhost:9887/api/services/enterprise/1
+
+### GET services by description
+GET http://localhost:9887/api/services/search?description=cleaning
+
+### GET services by maximum price
+GET http://localhost:9887/api/services/price/max/500
+
+### GET services by minimum price
+GET http://localhost:9887/api/services/price/min/100
+
+### POST create new service
+POST http://localhost:9887/api/services
+Content-Type: application/json
+
+{
+  "reference": "SRV003",
+  "description": "Portable Toilet Rental",
+  "price": 100.99,
+  "enterpriseId": 1
+}
+
+### PUT update service
+PUT http://localhost:9887/api/services/1
+Content-Type: application/json
+
+{
+  "reference": "SRV001",
+  "description": "Updated cleaning service description",
+  "price": 349.99,
+  "enterpriseId": 1
+}
+
+### DELETE service
+DELETE http://localhost:9887/api/services/1

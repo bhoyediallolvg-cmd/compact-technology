@@ -1,0 +1,43 @@
+### GET all operation expenses
+GET http://localhost:9887/api/operation-expenses
+
+### GET operation expenses by operation ID
+GET http://localhost:9887/api/operation-expenses/operation/1
+
+### GET operation expenses by expense ID
+GET http://localhost:9887/api/operation-expenses/expense/1
+
+### GET operation expenses by minimum cost
+GET http://localhost:9887/api/operation-expenses/cost/min/100
+
+### GET operation expenses by maximum cost
+GET http://localhost:9887/api/operation-expenses/cost/max/500
+
+### POST create new operation expense
+POST http://localhost:9887/api/operation-expenses
+Content-Type: application/json
+
+{
+  "operationId": 1,
+  "expenseId": 1,
+  "cost": 250
+}
+
+### PUT update operation expense
+PUT http://localhost:9887/api/operation-expenses/1/1
+Content-Type: application/json
+
+{
+  "operationId": 1,
+  "expenseId": 1,
+  "cost": 300
+}
+
+### DELETE operation expense
+DELETE http://localhost:9887/api/operation-expenses/1/1
+
+### DELETE operation expenses by operation ID
+DELETE http://localhost:9887/api/operation-expenses/operation/1
+
+### DELETE operation expenses by expense ID
+DELETE http://localhost:9887/api/operation-expenses/expense/1

@@ -1,0 +1,36 @@
+### GET all contacts
+GET http://localhost:9887/api/contacts
+
+### GET contact by ID
+GET http://localhost:9887/api/contacts/1
+
+### GET contact by phone
+GET http://localhost:9887/api/contacts/phone/+224612345678
+
+### GET contacts by customer ID
+GET http://localhost:9887/api/contacts/customer/1
+
+### POST create new contact
+POST http://localhost:9887/api/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Bhoye",
+  "lastName": "Sow",
+  "phone": "+224612345608",
+  "customerId": 2
+}
+
+### PUT update contact
+PUT http://localhost:9887/api/contacts/1
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "phone": "+224612345678",
+  "customerId": 1
+}
+
+### DELETE contact
+DELETE http://localhost:9887/api/contacts/1

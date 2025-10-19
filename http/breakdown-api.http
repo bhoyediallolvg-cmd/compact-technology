@@ -1,0 +1,63 @@
+### GET all breakdowns
+GET http://localhost:9887/api/breakdowns
+
+### GET breakdown by ID
+GET http://localhost:9887/api/breakdowns/1
+
+### GET breakdowns by type
+GET http://localhost:9887/api/breakdowns/type/1
+
+### GET breakdowns by description search
+GET http://localhost:9887/api/breakdowns/search?description=engine
+
+### GET breakdowns breaked between dates
+GET http://localhost:9887/api/breakdowns/breaked-between?start=2023-01-01T00:00:00&end=2023-12-31T23:59:59
+
+### GET breakdowns fixed between dates
+GET http://localhost:9887/api/breakdowns/fixed-between?start=2023-01-01T00:00:00&end=2023-12-31T23:59:59
+
+### GET breakdowns created between dates
+GET http://localhost:9887/api/breakdowns/created-between?start=2023-01-01T00:00:00&end=2023-12-31T23:59:59
+
+### GET breakdowns by minimum workforce cost
+GET http://localhost:9887/api/breakdowns/workforce-cost?minCost=1000
+
+### GET breakdowns by minimum parts cost
+GET http://localhost:9887/api/breakdowns/parts-cost?minCost=500
+
+### GET unfixed breakdowns
+GET http://localhost:9887/api/breakdowns/unfixed
+
+### POST create new breakdown
+POST http://localhost:9887/api/breakdowns
+Content-Type: application/json
+
+{
+  "duration": 120,
+  "type": "1",
+  "description": "Engine failure",
+  "workforceCost": 2000,
+  "parts": "{\"part1\": \"Engine oil\", \"part2\": \"Oil filter\"}",
+  "partsCost": 500.0,
+  "breakedAt": "2023-06-15T10:30:00",
+  "fixedAt": "2023-06-15T14:30:00",
+  "createdAt": "2023-06-15T09:00:00"
+}
+
+### PUT update breakdown
+PUT http://localhost:9887/api/breakdowns/1
+Content-Type: application/json
+
+{
+  "duration": 180,
+  "type": "1",
+  "description": "Engine failure and oil leak",
+  "workforceCost": 2500,
+  "parts": "{\"part1\": \"Engine oil\", \"part2\": \"Oil filter\", \"part3\": \"Gasket\"}",
+  "partsCost": 700.0,
+  "breakedAt": "2023-06-15T10:30:00",
+  "fixedAt": "2023-06-15T16:30:00"
+}
+
+### DELETE breakdown
+DELETE http://localhost:9887/api/breakdowns/1

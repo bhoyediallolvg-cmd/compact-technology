@@ -1,0 +1,12 @@
+### POST create new enterprise
+POST http://localhost:9887/api/jobs
+Content-Type: application/json
+
+{
+  "name": "Operateur",
+  "category": 1,
+  "enterpriseId": 1
+}
+
+### GET all jobs
+GET http://localhost:9887/api/jobs

@@ -1,0 +1,64 @@
+### GET all users
+GET http://localhost:9887/api/users
+
+### GET user by ID
+GET http://localhost:9887/api/users/1
+
+### GET user by registration number
+GET http://localhost:9887/api/users/registration/EMP001
+
+### GET users by enterprise ID
+GET http://localhost:9887/api/users/enterprise/1
+
+### GET users by job ID
+GET http://localhost:9887/api/users/job/1
+
+### GET users by status
+GET http://localhost:9887/api/users/status/1
+
+### GET users by contract type
+GET http://localhost:9887/api/users/contract-type/1
+
+### GET users by name
+GET http://localhost:9887/api/users/search?name=John
+
+### POST create new user
+POST http://localhost:9887/api/users
+Content-Type: application/json
+
+{
+  "registrationNumber": "EMP002",
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "dateOfBirth": "1990-05-15",
+  "hiredAt": "2023-01-15T09:00:00",
+  "phoneNumber": "+224612345678",
+  "roles": "ROLE_EMPLOYEE",
+  "contractType": 1,
+  "hourlyRate": 15,
+  "jobId": 1,
+  "status": 1,
+  "enterpriseId": 1
+}
+
+### PUT update user
+PUT http://localhost:9887/api/users/1
+Content-Type: application/json
+
+{
+  "registrationNumber": "EMP001",
+  "firstName": "John",
+  "lastName": "Smith",
+  "dateOfBirth": "1985-10-20",
+  "hiredAt": "2022-06-01T09:00:00",
+  "phoneNumber": "+224612345679",
+  "roles": "ROLE_MANAGER",
+  "contractType": 2,
+  "hourlyRate": 20,
+  "jobId": 2,
+  "status": 1,
+  "enterpriseId": 1
+}
+
+### DELETE user
+DELETE http://localhost:9887/api/users/1

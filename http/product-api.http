@@ -1,0 +1,43 @@
+### GET all products
+GET http://localhost:9887/api/products
+
+### GET product by ID
+GET http://localhost:9887/api/products/1
+
+### GET product by reference
+GET http://localhost:9887/api/products/reference/PROD001
+
+### GET products by enterprise ID
+GET http://localhost:9887/api/products/enterprise/1
+
+### GET products by type
+GET http://localhost:9887/api/products/type/1
+
+### POST create new product
+POST http://localhost:9887/api/products
+Content-Type: application/json
+
+{
+  "reference": "PROD002",
+  "description": "Sample product description",
+  "price": 99.99,
+  "quantity": 50,
+  "type": "1",
+  "enterpriseId": 1
+}
+
+### PUT update product
+PUT http://localhost:9887/api/products/1
+Content-Type: application/json
+
+{
+  "reference": "PROD001",
+  "description": "Updated product description",
+  "price": 129.99,
+  "quantity": 45,
+  "type": "1",
+  "enterpriseId": 1
+}
+
+### DELETE product
+DELETE http://localhost:9887/api/products/1

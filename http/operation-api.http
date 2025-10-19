@@ -1,0 +1,78 @@
+### GET all operations
+GET http://localhost:9887/api/operations
+
+### GET operation by ID
+GET http://localhost:9887/api/operations/1
+
+### GET operation by reference
+GET http://localhost:9887/api/operations/reference/OP001
+
+### GET operations by start date between
+GET http://localhost:9887/api/operations/start-between?start=2023-01-01T00:00:00&end=2023-12-31T23:59:59
+
+### GET operations by end date between
+GET http://localhost:9887/api/operations/end-between?start=2023-01-01T00:00:00&end=2023-12-31T23:59:59
+
+### GET operations by started date between
+GET http://localhost:9887/api/operations/started-between?start=2023-01-01T00:00:00&end=2023-12-31T23:59:59
+
+### GET operations by finished date between
+GET http://localhost:9887/api/operations/finished-between?start=2023-01-01T00:00:00&end=2023-12-31T23:59:59
+
+### GET operations by work site ID
+GET http://localhost:9887/api/operations/work-site/1
+
+### GET operations by service ID
+GET http://localhost:9887/api/operations/service/1
+
+### GET operations by customer ID
+GET http://localhost:9887/api/operations/customer/1
+
+### GET operations by vehicle ID
+GET http://localhost:9887/api/operations/vehicle/1
+
+### GET operations by team lead ID
+GET http://localhost:9887/api/operations/team-lead/1
+
+### GET operations not started
+GET http://localhost:9887/api/operations/not-started
+
+### GET operations not finished
+GET http://localhost:9887/api/operations/not-finished
+
+### POST create new operation
+POST http://localhost:9887/api/operations
+Content-Type: application/json
+
+{
+  "reference": "OP001",
+  "startAt": "2023-06-01T08:00:00",
+  "endAt": "2023-06-01T17:00:00",
+  "numberOfTravels": 3,
+  "workSiteId": 1,
+  "serviceId": 1,
+  "customerId": 1,
+  "vehicleId": 1,
+  "teamLeadId": 2
+}
+
+### PUT update operation
+PUT http://localhost:9887/api/operations/1
+Content-Type: application/json
+
+{
+  "reference": "OP001",
+  "startAt": "2023-06-01T08:00:00",
+  "endAt": "2023-06-01T18:00:00",
+  "startedAt": "2023-06-01T08:15:00",
+  "finishedAt": "2023-06-01T17:45:00",
+  "numberOfTravels": 4,
+  "workSiteId": 1,
+  "serviceId": 1,
+  "customerId": 1,
+  "vehicleId": 1,
+  "teamLeadId": 1
+}
+
+### DELETE operation
+DELETE http://localhost:9887/api/operations/1

@@ -1,0 +1,28 @@
+server:
+  port: 7787
+
+spring:
+  # Application name
+  application:
+    name: wama-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/compact
+    username: postgres
+    password: mysecretpassword
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+# Logging config
+#logging:
+#  file:
+#    name: logs/app.log
+#  level:
+#    org:

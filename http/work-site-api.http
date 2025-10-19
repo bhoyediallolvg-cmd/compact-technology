@@ -1,0 +1,40 @@
+### GET all work sites
+GET http://localhost:9887/api/work-sites
+
+### GET work site by ID
+GET http://localhost:9887/api/work-sites/1
+
+### GET work site by reference
+GET http://localhost:9887/api/work-sites/reference/WS001
+
+### GET work sites by customer ID
+GET http://localhost:9887/api/work-sites/customer/1
+
+### GET work sites by address containing
+GET http://localhost:9887/api/work-sites/search/address?address=Conakry
+
+### GET work sites by reference containing
+GET http://localhost:9887/api/work-sites/search/reference?reference=WS
+
+### POST create new work site
+POST http://localhost:9887/api/work-sites
+Content-Type: application/json
+
+{
+  "reference": "WS002",
+  "address": "Conakry, Guinea",
+  "customerId": 1
+}
+
+### PUT update work site
+PUT http://localhost:9887/api/work-sites/1
+Content-Type: application/json
+
+{
+  "reference": "WS001",
+  "address": "Conakry, Kaloum, Guinea",
+  "customerId": 1
+}
+
+### DELETE work site
+DELETE http://localhost:9887/api/work-sites/1

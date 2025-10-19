@@ -1,0 +1,42 @@
+2025-10-18T22:27:32.633-07:00  INFO 15086 --- [compact-technology] [restartedMain] g.a.c.CompactTechnologyApplication       : Starting CompactTechnologyApplication using Java 21.0.6 with PID 15086 (/Users/mamadoubhoyediallo/Documents/JAVA/project/compact-technology/target/classes started by mamadoubhoyediallo in /Users/mamadoubhoyediallo/Documents/JAVA/project/compact-technology)
+2025-10-18T22:27:32.637-07:00  INFO 15086 --- [compact-technology] [restartedMain] g.a.c.CompactTechnologyApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-10-18T22:27:32.664-07:00  INFO 15086 --- [compact-technology] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-18T22:27:32.666-07:00  INFO 15086 --- [compact-technology] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-18T22:27:32.949-07:00  INFO 15086 --- [compact-technology] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-18T22:27:33.015-07:00  INFO 15086 --- [compact-technology] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 15 JPA repository interfaces.
+2025-10-18T22:27:33.196-07:00  INFO 15086 --- [compact-technology] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9887 (http)
+2025-10-18T22:27:33.202-07:00  INFO 15086 --- [compact-technology] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-18T22:27:33.202-07:00  INFO 15086 --- [compact-technology] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-18T22:27:33.217-07:00  INFO 15086 --- [compact-technology] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-18T22:27:33.217-07:00  INFO 15086 --- [compact-technology] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 550 ms
+2025-10-18T22:27:33.287-07:00  INFO 15086 --- [compact-technology] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-18T22:27:33.311-07:00  INFO 15086 --- [compact-technology] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-18T22:27:33.324-07:00  INFO 15086 --- [compact-technology] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-18T22:27:33.428-07:00  INFO 15086 --- [compact-technology] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-18T22:27:33.440-07:00  INFO 15086 --- [compact-technology] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-18T22:27:33.510-07:00  INFO 15086 --- [compact-technology] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@170872cc
+2025-10-18T22:27:33.511-07:00  INFO 15086 --- [compact-technology] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-18T22:27:33.528-07:00  WARN 15086 --- [compact-technology] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-18T22:27:33.537-07:00  INFO 15086 --- [compact-technology] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-18T22:27:33.946-07:00  INFO 15086 --- [compact-technology] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-18T22:27:34.391-07:00  INFO 15086 --- [compact-technology] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-18T22:27:34.722-07:00  WARN 15086 --- [compact-technology] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-18T22:27:34.901-07:00  INFO 15086 --- [compact-technology] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-18T22:27:34.917-07:00  INFO 15086 --- [compact-technology] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9887 (http) with context path '/'
+2025-10-18T22:27:35.423-07:00  INFO 15086 --- [compact-technology] [restartedMain] g.a.c.CompactTechnologyApplication       : Started CompactTechnologyApplication in 3.086 seconds (process running for 3.572)
+2025-10-18T22:27:48.776-07:00  INFO 15086 --- [compact-technology] [http-nio-9887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-18T22:27:48.776-07:00  INFO 15086 --- [compact-technology] [http-nio-9887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-18T22:27:48.777-07:00  INFO 15086 --- [compact-technology] [http-nio-9887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-18T22:27:48.872-07:00  INFO 15086 --- [compact-technology] [http-nio-9887-exec-1] g.a.c.services.impl.LoggingServiceImpl   : RESPONSE method=[GET] path=[/api/vehicles] responseHeaders=[{}] responseBody=[[VehicleDTO(id=1, registrationNumber=VEH001, brand=Toyota, model=Hilux, description=Pickup truck, status=1, volume=2.5, type=1, price=35000.0, acquiredAt=2023-01-15T09:00, enterpriseId=1, enterprise=EnterpriseDTO(id=1, name=LGT Company, logo=https://example.com/logo.png, description=Entreprise de services d'assainissement, address=Conakry, Guinea, subdomain=lgt-gn)), VehicleDTO(id=2, registrationNumber=VEH002, brand=Renault, model=Kerax 360, description=Camion vidangeur, status=1, volume=2.5, type=1, price=35000.0, acquiredAt=2023-01-15T09:00, enterpriseId=1, enterprise=EnterpriseDTO(id=1, name=LGT Company, logo=https://example.com/logo.png, description=Entreprise de services d'assainissement, address=Conakry, Guinea, subdomain=lgt-gn)), VehicleDTO(id=3, registrationNumber=VEH003, brand=Iveco, model=Tracer, description=Camion vidangeur, status=1, volume=2.5, type=1, price=40000.0, acquiredAt=2023-01-15T09:00, enterpriseId=1, enterprise=EnterpriseDTO(id=1, name=LGT Company, logo=https://example.com/logo.png, description=Entreprise de services d'assainissement, address=Conakry, Guinea, subdomain=lgt-gn))]] 
+2025-10-18T22:31:30.185-07:00  INFO 15086 --- [compact-technology] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-18T22:31:32.191-07:00  INFO 15086 --- [compact-technology] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-18T22:31:32.201-07:00  INFO 15086 --- [compact-technology] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-18T22:31:32.206-07:00  INFO 15086 --- [compact-technology] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-18T22:31:32.208-07:00  INFO 15086 --- [compact-technology] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

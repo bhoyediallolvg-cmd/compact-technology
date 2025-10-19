@@ -1,0 +1,54 @@
+### GET all vehicles
+GET http://localhost:9887/api/vehicles
+
+### GET vehicle by ID
+GET http://localhost:9887/api/vehicles/3
+
+### GET vehicle by registration number
+GET http://localhost:9887/api/vehicles/registration/VEH001
+
+### GET vehicles by enterprise ID
+GET http://localhost:9887/api/vehicles/enterprise/1
+
+### GET vehicles by status
+GET http://localhost:9887/api/vehicles/status/1
+
+### GET vehicles by type
+GET http://localhost:9887/api/vehicles/type/1
+
+### POST create new vehicle
+POST http://localhost:9887/api/vehicles
+Content-Type: application/json
+
+{
+  "registrationNumber": "VEH003",
+  "brand": "Iveco",
+  "model": "Tracer",
+  "description": "Camion vidangeur",
+  "status": 1,
+  "volume": 2.5,
+  "type": 1,
+  "price": 40000,
+  "acquiredAt": "2023-01-15T09:00:00",
+  "enterpriseId": 1
+}
+
+### PUT update vehicle
+PUT http://localhost:9887/api/vehicles/1
+Content-Type: application/json
+
+{
+  "registrationNumber": "VEH001",
+  "brand": "Toyota",
+  "model": "Land Cruiser",
+  "description": "SUV",
+  "status": 1,
+  "volume": 3.0,
+  "type": 2,
+  "price": 45000,
+  "acquiredAt": "2022-06-01T09:00:00",
+  "enterpriseId": 1
+}
+
+### DELETE vehicle
+DELETE http://localhost:9887/api/vehicles/1

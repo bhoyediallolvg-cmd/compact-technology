@@ -1,0 +1,39 @@
+### GET all customers
+GET http://localhost:9887/api/customers
+
+### GET customer by ID
+GET http://localhost:9887/api/customers/1
+
+### GET customer by number
+GET http://localhost:9887/api/customers/number/CUST001
+
+### GET customers by enterprise ID
+GET http://localhost:9887/api/customers/enterprise/1
+
+### GET customers by type
+GET http://localhost:9887/api/customers/type/1
+
+### POST create new customer
+POST http://localhost:9887/api/customers
+Content-Type: application/json
+
+{
+  "customerNumber": "CUST003",
+  "type": 2,
+  "address": "Labe, Guinea",
+  "enterpriseId": 1
+}
+
+### PUT update customer
+PUT http://localhost:9887/api/customers/1
+Content-Type: application/json
+
+{
+  "customerNumber": "CUST001",
+  "type": 2,
+  "address": "Conakry, Kaloum, Guinea",
+  "enterpriseId": 1
+}
+
+### DELETE customer
+DELETE http://localhost:9887/api/customers/1
